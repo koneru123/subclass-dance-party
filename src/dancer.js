@@ -12,16 +12,6 @@ makeDancer.prototype.step = function( timeBetweenSteps) {
   setTimeout( steppyStep, timeBetweenSteps);
 };
 
-makeDancer.prototype.lineUp = function () {
-  //reove the absolute position class
-  //set the display to flex
-};
-
-makeDancer.prototype.scatter = function () {
-  //set the display to block
-  //add the absolutePosition class
-};
-
 makeDancer.prototype.setPosition = function(top, left) {
   // Use css top and left properties to position our <span> tag
   // where it belongs on the page. See http://api.jquery.com/css/
