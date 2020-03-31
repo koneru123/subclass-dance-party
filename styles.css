@@ -56,8 +56,12 @@ body, a:link, a:visited, a:active{
 }
 
 .bounce {
-  border-color: green;
-  border-radius: 3px;
+  border: none;
+  background-image: url('./src/img/ahnold.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 120px;
   animation: bounce 0.25s infinite;
 }
 
@@ -70,7 +74,12 @@ body, a:link, a:visited, a:active{
 }
 
 .spinny {
-  outline: 10px solid yellow;
+  border: none;
+  background-image: url('./src/img/robocop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 120px;
   animation: spin 3s infinite;
   transform: skew(20deg);
   animation-direction: alternate;
