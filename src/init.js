@@ -1,6 +1,10 @@
 $(document).ready(function() {
   window.dancers = [];
 
+  $('#toggleLine').click(function() {
+    $('.dancer').removeClass('abolutePosition');
+  });
+
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
@@ -27,6 +31,6 @@ $(document).ready(function() {
     );
     window.dancers.push( dancer );
     $('#dancefloor').append(dancer.$node);
-   });
+  });
 });
 

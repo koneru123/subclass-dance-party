@@ -24,7 +24,10 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:20px solid red;
   border-radius:1px;
-  position:absolute;
+}
+
+.abolutePosition {
+  position: absolute;
 }
 
 .dancer:hover{
