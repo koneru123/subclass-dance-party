@@ -25,6 +25,7 @@ $(document).ready(function() {
       $("body").width() * Math.random(), //top
       Math.random() * 1000 //timeBetweenSteps
     );
+
     $('body').append(dancer.$node);
    });
 });

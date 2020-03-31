@@ -22,9 +22,14 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  border:20px solid red;
+  border-radius:1px;
   position:absolute;
+}
+
+.blinky {
+  border-color: pink;
+  border-radius: 20px;
 }
 
 #dancefloor {
@@ -34,4 +39,21 @@ body, a:link, a:visited, a:active{
   background-repeat: no-repeat;
   min-height: 100%;
   height: auto;
+}
+
+.spinny {
+  outline: 10px solid yellow;
+  animation: infinite-spinning 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  transform: rotate(25deg);
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
