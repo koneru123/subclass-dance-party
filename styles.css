@@ -1,5 +1,6 @@
 body, html{
   height:100%;
+  min-height: 100%;
 }
 body{
   margin: 0px;
@@ -24,4 +25,13 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+#dancefloor {
+  background-image: url('./src/img/background.gif');
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  height: auto;
 }
