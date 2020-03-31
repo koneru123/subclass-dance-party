@@ -2,7 +2,11 @@ $(document).ready(function() {
   window.dancers = [];
 
   $('#toggleLine').click(function() {
-    $('.dancer').removeClass('abolutePosition');
+    $('.dancer').removeClass('absolutePosition');
+  });
+
+  $('#scatter').click(function() {
+    $('.dancer').addClass('absolutePosition');
   });
 
   $('.addDancerButton').on('click', function(event) {

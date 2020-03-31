@@ -26,8 +26,9 @@ body, a:link, a:visited, a:active{
   border-radius:1px;
 }
 
-.abolutePosition {
+.absolutePosition {
   position: absolute;
+
 }
 
 .dancer:hover{
@@ -50,6 +51,7 @@ body, a:link, a:visited, a:active{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .blinky {
