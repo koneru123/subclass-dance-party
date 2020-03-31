@@ -47,13 +47,12 @@ body, a:link, a:visited, a:active{
 }
 
 .blinky {
-  /*border-color: pink;
-  border-radius: 20px;*/
+  border: none;
   background-image: url('./src/img/princeFace.png');
   background-repeat: no-repeat;
-  height: 20px;
-  width: 20px;
-
+  background-size: cover;
+  height: 150px;
+  width: 120px;
 }
 
 .bounce {
