@@ -1,16 +1,16 @@
-var makeSpinnyDancer = function(top, left, timeBetweenSteps ) {
+var makeBouncyDancer = function(top, left, timeBetweenSteps ) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node.addClass('spinny');
+  this.$node.addClass('bounce');
 };
 
-makeSpinnyDancer.prototype = Object.create(makeDancer.prototype);
-makeSpinnyDancer.prototype.constructor = makeSpinnyDancer;
+makeBouncyDancer.prototype = Object.create(makeDancer.prototype);
+makeBouncyDancer.prototype.constructor = makeBouncyDancer;
 
-makeSpinnyDancer.prototype.oldStep = function( timeBetweenSteps ){
+makeBouncyDancer.prototype.oldStep = function( timeBetweenSteps ){
   makeDancer.prototype.step.call(this, timeBetweenSteps );
 }
 
-makeSpinnyDancer.prototype.step = function( timeBetweenSteps ) {
+makeBouncyDancer.prototype.step = function( timeBetweenSteps ) {
   // call the old version of step at the beginning of any call to this new version of step
   this.oldStep();
   // toggle() is a jQuery method to show/hide the <span> tag.
@@ -18,4 +18,4 @@ makeSpinnyDancer.prototype.step = function( timeBetweenSteps ) {
   // other effects you can use on a jQuery-wrapped html tag.
 }
 
-//var makeSpinnyDancer = new makeSpinnyDancer;
+//var makeBouncyDancer = new makeBouncyDancer;
