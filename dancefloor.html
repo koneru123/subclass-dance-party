@@ -13,13 +13,17 @@
   </head>
   <body>
     <div class="topbar">
+      <span class="title">object dance party</span>
+
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeSpinnyDancer">add a spinny dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBouncyDancer">add a bouncy dancer</a>
       <!-- add dancer type 3 -->
       <!-- button to line up the dancers -->
       <!-- use a background image -->
-      <span class="title">object dance party</span>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
+      <a href="#" id="toggleLine">Line Up!</a>
+      <!--  1. definitely remove the "position: absolute" which is in .dancer -->
+      <!-- we could .removeClass() and .addClass() to do that -->
     </div>
 
     <div id="dancefloor">

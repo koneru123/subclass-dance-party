@@ -44,6 +44,9 @@ body, a:link, a:visited, a:active{
   background-repeat: no-repeat;
   min-height: 100%;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .blinky {
@@ -62,7 +65,7 @@ body, a:link, a:visited, a:active{
   background-size: cover;
   height: 150px;
   width: 120px;
-  animation: bounce 0.25s infinite;
+  animation: bounce 1s infinite;
 }
 
 @keyframes bounce {
